@@ -1,0 +1,23 @@
+.main-header {
+    border-bottom: solid 1px $light-gray;
+
+    &__profile-img {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+    }
+
+    &__author-name,
+    &__author-followers {
+        margin: 0;
+    }
+
+    &__author-name {
+        font-weight: $font-bold;
+    }
+
+    &__author-followers {
+        color: $gray;
+    }
+
+}

@@ -1,0 +1,12 @@
+.main-content {
+
+    &__title {
+        font-size: 2rem;
+    }
+
+    &__video-title {
+        padding-top: 1em;
+        font-size: 1.2rem;
+        font-weight: $font-bold;
+    }
+}

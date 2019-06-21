@@ -1,0 +1,24 @@
+.button {
+    border: none;
+    padding: .5em 0;
+    width: 5em;
+    color: white;
+
+    &--blue {
+        background-color: $blue;
+
+        &:hover {
+            background-color: $light-blue;
+        }
+    }
+
+    &--red {
+        background-color: $red;
+
+        &:hover {
+            background-color: $light-red;
+        }
+    }
+
+
+}
