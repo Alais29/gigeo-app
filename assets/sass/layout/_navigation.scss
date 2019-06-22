@@ -1,16 +1,66 @@
 .navbar-toggler {
-    border: none;
+  border: none;
 }
 
-// @media (max-width: 991.98px) {
-//     .navbar-nav {
-//         flex-direction: row;
-//         justify-content: space-around;
-//     }
+.navigation {
+  a {
+    color: black;
 
-//     .show {
-//         float: left;
-//         width: 150px;
-//     }
+    &:hover {
+      color: gray;
+    }
+  }
 
-// }
+  &__collapsible {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    label {
+      order: 2;
+      margin: 0;
+    }
+  }
+
+  #menu {
+    display: none;
+  }
+
+  input:checked ~ .navigation__container {
+    max-height: 100%;
+  }
+
+  &__container {
+    display: flex;
+    width: 50%;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  &__list {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navigation {
+    &__collapsible {
+      width: 25%;
+
+      label {
+        display: none;
+      }
+    }
+
+    &__container {
+      width: 100%;
+      max-height: 100%;
+      overflow: visible;
+    }
+  }
+}
